@@ -13,10 +13,16 @@ body {
 
 .header {
     background-color: #ffffff;
-    color: white;
     text-align: center;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    display: block;
+    margin: 0 auto;
 }
 
 .header h1 {
@@ -62,15 +68,19 @@ body {
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding: 1rem 0.5rem; /* Adjust padding for smaller screens */
+    }
+
     .header h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Smaller font size for headings */
     }
 
     .header p {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjust paragraph font size */
     }
 
     .questionnaire {
-        padding: 1rem;
+        padding: 1rem; /* Reduce padding for smaller screens */
     }
 }
